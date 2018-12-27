@@ -1,0 +1,165 @@
+@import "./mixin";
+
+.login-container {
+  padding: 0 px2rem(30px);
+  .login-title {
+    position: relative;
+    padding: px2rem(10px) 0;
+    text-align: left;
+    font-size: px2rem(52px);
+    color: #000;
+    .cancel-btn {
+      position: absolute;
+      right: 0;
+      top: px2rem(50px);
+      letter-spacing: px2rem(2px);
+      color: #666666;
+      font-size: px2rem(26px);
+    }
+  }
+  .login-btn {
+    //background: url("https://ufe.oss-cn-shenzhen.aliyuncs.com/webapp/assets/login-icon.png") center center no-repeat;
+    background: url("../assets/login-icon.png") center center no-repeat;
+    background-size: cover;
+    width: px2rem(626px);
+    height: px2rem(94px);
+    line-height: px2rem(94px);
+    text-align: center;
+    color: #110C01;
+    font-size: px2rem(34px);
+    border-radius: px2rem(60px);
+  }
+  .mu-checkbox-wrapper, .mu-checkbox-label {
+    color: #bc8018;
+    font-size: px2rem(24px);
+  }
+  .msg-btn {
+    position: absolute;
+    right: 0;
+    top: px2rem(18px);
+    text-align: center;
+    border-radius: px2rem(45px);
+    padding: px2rem(8px) px2rem(45px);
+    background-color: #cda65b;
+    font-size: px2rem(24px);
+    color: #ffffff;
+    z-index: 9999;
+  }
+  .image-code {
+    position: absolute;
+    right: 0;
+    padding: px2rem(2px);
+    top: px2rem(18px);
+    width: px2rem(182px);
+    height: px2rem(52px);
+  }
+  a.forget-pwd {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    color: #999999;
+    font-size: px2rem(24px);
+  }
+  h3.ljzc-title {
+    width: 100%;
+    color: #be8118;
+    font-size: px2rem(28px);
+    margin-bottom: px2rem(5px);
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+  h3.ljzc-title a {
+    display: block;
+    color: #be8118;
+    position: relative;
+    font-size: px2rem(28px);
+  }
+  h3.ljzc-title a:before, h3.ljzc-title a:after {
+    content: '';
+    position: absolute;
+    top: 52%;
+    background: #dde0e7;
+    width: 30%;
+    height: px2rem(2px);
+  }
+  h3.ljzc-title a:before {
+    left: 5%;
+  }
+  h3.ljzc-title a:after {
+    right: 5%;
+  }
+  .ljcy-btn-rows {
+    text-align: center;
+    padding: px2rem(5px) 0;
+    .ljcy-btn {
+      display: inline-block;
+      margin: 0 px2rem(16px);
+      text-align: center;
+      width: px2rem(242px);
+      height: px2rem(70px);
+      line-height: px2rem(70px);
+      font-size: px2rem(28px);
+      border-radius: px2rem(35px);
+    }
+    .save-btn{
+      background-color: #cda65b;
+      color: #ffffff;
+    }
+    .cancel-btn {
+      border: solid 1px #d2d2d2;
+      color: #484848;
+    }
+  }
+}
+
+.mu-form-item {
+  min-height: px2rem(50px);
+  margin-bottom: px2rem(20px);
+  padding-bottom: px2rem(34px);
+  .mu-form-item-label {
+    font-size: px2rem(28px);
+    line-height: px2rem(28px);
+  }
+  .mu-form-item-content {
+    min-height: px2rem(32px);
+    .mu-input {
+      font-size: px2rem(28px);
+      .mu-text-field-input, .mu-select-input {
+        height: px2rem(70px);
+        font-size: px2rem(28px);
+      }
+    }
+  }
+}
+
+/*密码强度*/
+.qiang {
+  padding-top: 0;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: px2rem(14px);
+  .p1 {
+    font-size: px2rem(14px);
+  }
+  i.el-icon-warning {
+    color: #d2d2d2;
+    font-size: px2rem(14px);
+    padding: 0 px2rem(5px) 0 0;
+  }
+  p.strength {
+    padding: px2rem(10px) 0;
+    span.on {
+      background: #f56c6c;
+      color: #fff;
+    }
+    span {
+      background: #d6d1d1;
+      display: inline-block;
+      text-align: center;
+      width: px2rem(130px);
+      padding: px2rem(10px) px2rem(8px);
+      margin-right: px2rem(10px);
+    }
+  }
+}
